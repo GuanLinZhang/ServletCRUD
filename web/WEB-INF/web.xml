@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+
+    <resource-ref>
+        <description>MySQL DB Connection</description>
+        <!-- 参考数据源名字,同Tomcat中配置的Resource节点中name属性值"jdbc/mysql"一致 -->
+        <res-ref-name>jdbc/mysql</res-ref-name>
+        <!-- 资源类型 -->
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+
+</web-app>

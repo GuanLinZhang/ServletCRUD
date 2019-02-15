@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="false">
+    <WatchedResource>/WEB-INF/web.xml</WatchedResource>
+
+    <Resource name="jdbc/mysql"
+              auth="Container"
+              type="javax.sql.DataSource"
+              username="root"
+              password="wow1996"
+              maxIdle="30"
+              maxWait="10000"
+              maxActive="100"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;useSSL=false&amp;createDatabaseIfNotExist=true&amp;characterEncoding=utf8&amp;serverTimezone=UTC&amp;allowMultiQueries=true&amp;autoReconnect=true&amp;failOverReadOnly=false" />
+
+</Context>
